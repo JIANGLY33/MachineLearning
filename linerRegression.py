@@ -85,7 +85,7 @@ for pass_id in range(num_epochs):
                                      feeder=feeder)
             plot_prompt.append(test_prompt, step, test_metics[0])
             plot_prompt.plot()
-            
+
             print("%s, Step %d, Cost %f" %
 	                  (test_prompt, step, test_metics[0]))
             if test_metics[0] < 10.0: # 如果准确率达到要求，则停止训练
